@@ -13,14 +13,19 @@ public class BoatController extends Observable implements IBoatController{
 	}
 
 	@Override
-	public void setName(String string) {
+	public void setBoatName(String string) {
 		boat.setName(string);
 		notifyObservers();
 	}
-
+	
 	@Override
 	public String getString() {
 		return "Boat: " + boat.getName();
+	}
+
+	@Override
+	public String getBoatName() {
+		return boat.getName();
 	}
 
 }

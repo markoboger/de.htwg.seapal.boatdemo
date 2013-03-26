@@ -4,7 +4,9 @@ import util.observer.IObservable;
 
 public interface IBoatController extends IObservable{
 
-	void setName(String string);
+	void setBoatName(String string);
+	
+	String getBoatName();
 
 	String getString();
 

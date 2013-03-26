@@ -27,7 +27,7 @@ public class BoatTUI implements IObserver{
 		}
 		if (line.equalsIgnoreCase("n")) {
 			Scanner scanner = new Scanner(System.in);
-			controller.setName(scanner.next());
+			controller.setBoatName(scanner.next());
 		}
 		return continu;
 	}

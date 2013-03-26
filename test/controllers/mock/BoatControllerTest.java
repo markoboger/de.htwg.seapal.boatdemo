@@ -2,18 +2,28 @@ package controllers.mock;
 
 import static org.junit.Assert.*;
 
-import models.mock.Boat;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import app.BoatDemoMockModule;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+
+import controllers.IBoatController;
+
 public class BoatControllerTest {
 
-	private BoatController boatController;
+	private IBoatController boatController;
+	// Set up Google Guice Dependency Injector
+	Injector injector = Guice.createInjector(new BoatDemoMockModule());
+
 	
 	@Before
 	public void setup(){
-		boatController = new BoatController(new Boat()); 
+		// Build up the application, resolving dependencies automatically by Guice
+		boatController = injector.getInstance(IBoatController.class);
 	}
 
 	@Test

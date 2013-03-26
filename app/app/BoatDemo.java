@@ -1,9 +1,13 @@
+package app;
+
 import java.util.Scanner;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+
 import views.tui.BoatTUI;
-import controllers.impl.BoatController;
-import models.IBoat;
-import models.impl.Boat;
+import controllers.IBoatController;
+
 
 public class BoatDemo {
 
@@ -11,8 +15,13 @@ public class BoatDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		IBoat boat = new Boat();
-		BoatController controller = new BoatController(boat);
+		
+		// Set up Google Guice Dependency Injector
+		Injector injector = Guice.createInjector(new BoatDemoImplModule());
+		
+		// Build up the application, resolving dependencies automatically by Guice
+		IBoatController controller = injector.getInstance(IBoatController.class);
+
 		BoatTUI tui = new BoatTUI(controller);
 
 		tui.printTUI();

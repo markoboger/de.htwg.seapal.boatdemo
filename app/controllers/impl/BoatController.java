@@ -1,5 +1,7 @@
 package controllers.impl;
 
+import com.google.inject.Inject;
+
 import controllers.IBoatController;
 import util.observer.Observable;
 import models.IBoat;
@@ -8,6 +10,7 @@ public class BoatController extends Observable implements IBoatController{
 	
 	private IBoat boat;
 
+	@Inject
 	public BoatController(IBoat boat) {
 		this.boat = boat;
 	}

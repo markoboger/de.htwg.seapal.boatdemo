@@ -33,7 +33,7 @@ public class BoatTUI implements IObserver{
 	}
 	
 	public void printTUI() {
-		System.out.println("BoatDemo");
+		System.out.println("BoatDemo: n - new Name");
 		System.out.println(controller.getString());
 		
 	}

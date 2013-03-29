@@ -28,10 +28,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.14</version>
         <configuration>
-          <excludes>
-            <exclude>**/TestCircle.java</exclude>
-            <exclude>**/TestSquare.java</exclude>
-          </excludes>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
         </configuration>
       </plugin>
     </plugins>

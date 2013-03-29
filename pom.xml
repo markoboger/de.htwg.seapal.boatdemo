@@ -29,7 +29,8 @@
         <version>2.14</version>
         <configuration>
           <includes>
-            <include>**/*Test.java</include>
+            <include>test/controllers/impl/BoatControllerTest.java</include>
+            <include>controllers/impl/BoatControllerTest.java</include>
           </includes>
         </configuration>
       </plugin>
@@ -39,7 +40,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.1</version>
+            <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

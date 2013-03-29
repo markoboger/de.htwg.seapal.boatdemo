@@ -1,8 +1,8 @@
 package models.mock;
 
-import models.IBoat;
+import models.AbstractBoat;
 
-public class Boat implements IBoat{
+public class Boat extends AbstractBoat{
 
 	public String getName() {
 		return "Titanic";

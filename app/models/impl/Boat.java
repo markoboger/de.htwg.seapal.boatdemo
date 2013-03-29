@@ -1,17 +1,8 @@
 package models.impl;
 
-import models.IBoat;
+import models.AbstractBoat;
 
-public class Boat implements IBoat{
+public class Boat extends AbstractBoat{
 
-	private String name="n.a.";
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-	
 }

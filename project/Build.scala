@@ -4,8 +4,8 @@ import play.Project._
 
 object ApplicationBuild extends Build {
 
-  val appName         = "boatdemo"
-  val appVersion      = "1.0-SNAPSHOT"
+  val appName         = "de.htwg.seapal.boatdemo"
+  val appVersion      = "1.1"
 
   val appDependencies = Seq(
     // Add your project dependencies here,

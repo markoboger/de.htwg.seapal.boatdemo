@@ -3,9 +3,11 @@ package controllers.impl;
 import models.IBoat;
 
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 
 import controllers.AbstractBoatController;
 
+@Singleton
 public class BoatController extends AbstractBoatController{
 
 	@Inject

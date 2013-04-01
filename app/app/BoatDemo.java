@@ -5,8 +5,8 @@ import java.util.Scanner;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-import views.tui.BoatTUI;
-import controllers.IBoatController;
+import de.htwg.seapal.boatdemo.controllers.IBoatController;
+import de.htwg.seapal.boatdemo.views.tui.BoatTUI;
 
 
 public class BoatDemo {

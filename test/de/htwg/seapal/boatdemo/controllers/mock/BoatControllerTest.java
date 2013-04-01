@@ -31,5 +31,10 @@ public class BoatControllerTest {
 		boatController.setBoatName("BullshitName-ShouldNotShowUp");
 		assertEquals("Titanic", boatController.getBoatName());
 	}
+	
+	@Test
+	public void testGetOwnerName() {	
+		assertEquals("Mustermann", boatController.getBoatOwnerName());
+	}
 
 }

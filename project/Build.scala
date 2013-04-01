@@ -5,7 +5,7 @@ import play.Project._
 object ApplicationBuild extends Build {
 
   val appName         = "boatdemo"
-  val appVersion      = "1.2-SNAPSHOT"
+  val appVersion      = "1.3-SNAPSHOT"
 
   val appDependencies = Seq(
     // Add your project dependencies here,
@@ -13,7 +13,7 @@ object ApplicationBuild extends Build {
     javaJdbc,
     javaEbean,
     "com.google.inject" % "guice" % "3.0",
-    "persondemo" % "persondemo_2.10" % "1.0-SNAPSHOT"
+    "persondemo" % "persondemo_2.10" % "1.1-SNAPSHOT"
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(

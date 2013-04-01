@@ -1,3 +1,4 @@
+package de.htwg.seapal.boatdemo;
 import org.junit.*;
 
 import play.mvc.*;

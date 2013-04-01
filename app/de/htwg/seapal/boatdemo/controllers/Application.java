@@ -3,7 +3,7 @@ package de.htwg.seapal.boatdemo.controllers;
 import play.*;
 import play.mvc.*;
 
-import views.html.*;
+import de.htwg.seapal.boatdemo.views.html.*;
 
 public class Application extends Controller {
   

@@ -7,6 +7,8 @@ public interface IBoatController extends IObservable{
 	void setBoatName(String string);
 	
 	String getBoatName();
+	
+	String getBoatOwnerName();
 
 	String getString();
 

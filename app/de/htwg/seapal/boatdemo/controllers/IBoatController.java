@@ -1,6 +1,6 @@
 package de.htwg.seapal.boatdemo.controllers;
 
-import util.observer.IObservable;
+import de.htwg.util.observer.IObservable;
 
 public interface IBoatController extends IObservable{
 

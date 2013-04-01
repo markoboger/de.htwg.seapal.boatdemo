@@ -1,8 +1,12 @@
-package util.observer;
+package de.htwg.util.observer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import de.htwg.util.observer.Event;
+import de.htwg.util.observer.IObservable;
+import de.htwg.util.observer.IObserver;
 
 public class Observable implements IObservable {
 

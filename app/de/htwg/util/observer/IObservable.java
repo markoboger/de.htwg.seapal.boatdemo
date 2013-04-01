@@ -1,4 +1,7 @@
-package util.observer;
+package de.htwg.util.observer;
+
+import de.htwg.util.observer.Event;
+import de.htwg.util.observer.IObserver;
 
 public interface IObservable {
 

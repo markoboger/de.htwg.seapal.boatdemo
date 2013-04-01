@@ -3,8 +3,8 @@ package de.htwg.seapal.boatdemo.views.tui;
 import java.util.Scanner;
 
 import de.htwg.seapal.boatdemo.controllers.IBoatController;
-import util.observer.Event;
-import util.observer.IObserver;
+import de.htwg.util.observer.Event;
+import de.htwg.util.observer.IObserver;
 
 
 public class BoatTUI implements IObserver{
@@ -34,8 +34,7 @@ public class BoatTUI implements IObserver{
 	
 	public void printTUI() {
 		System.out.println("BoatDemo: n - new Name");
-		System.out.println(controller.getString());
-		
+		System.out.println(controller.getString());	
 	}
 
 }

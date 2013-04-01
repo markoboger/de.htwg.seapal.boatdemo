@@ -2,7 +2,7 @@ package de.htwg.seapal.boatdemo.controllers;
 
 import de.htwg.seapal.boatdemo.controllers.IBoatController;
 import de.htwg.seapal.boatdemo.models.IBoat;
-import util.observer.Observable;
+import de.htwg.util.observer.Observable;
 
 public abstract class AbstractBoatController extends Observable implements IBoatController{
 	

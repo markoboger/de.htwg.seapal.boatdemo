@@ -3,15 +3,17 @@ package app;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-import de.htwg.util.plugin.ActivatorSingleton;
-import de.htwg.util.plugin.PluginManager;
+import de.htwg.util.plugin.IActivator;
+import de.htwg.util.plugin.IPluginManager;
+import de.htwg.util.plugin.Plugin;
 
 @Singleton
-public class BoatActivator extends ActivatorSingleton {
+public class BoatActivator extends IActivator {
 	
 	@Inject
-	public BoatActivator(PluginManager pluginManager){
+	public BoatActivator(IPluginManager pluginManager, Plugin plugin){
 		this.pluginManager = pluginManager;
+		this.plugin = plugin;
 		start();
 	}
 

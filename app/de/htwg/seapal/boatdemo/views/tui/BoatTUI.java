@@ -44,12 +44,12 @@ public class BoatTUI implements Plugin, IObserver{
 
 	@Override
 	public String getMenuEntry() {
-		return "b - Boat";
+		return "Boat";
 	}
 
 	@Override
-	public String getMenuKey() {
-		return "b";
+	public char getMenuKey() {
+		return 'b';
 	}
 
 }

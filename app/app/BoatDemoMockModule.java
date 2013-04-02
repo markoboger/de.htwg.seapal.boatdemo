@@ -5,10 +5,8 @@ import com.google.inject.AbstractModule;
 
 import de.htwg.seapal.boatdemo.controllers.IBoatController;
 import de.htwg.seapal.boatdemo.models.IBoat;
-
 import de.htwg.seapal.persondemo.controllers.IPersonController;
 import de.htwg.seapal.persondemo.models.IPerson;
-import de.htwg.util.plugin.IPluginManager;
 
 public class BoatDemoMockModule extends AbstractModule {
 
@@ -19,8 +17,6 @@ public class BoatDemoMockModule extends AbstractModule {
 		
 		bind(IPersonController.class).to(de.htwg.seapal.persondemo.controllers.mock.PersonController.class);
 		bind(IPerson.class).to(de.htwg.seapal.persondemo.models.mock.Person.class);
-		
-		bind(IPluginManager.class).to(de.htwg.util.plugin.PluginManager.class);
 	}
 
 }

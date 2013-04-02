@@ -1,11 +1,10 @@
-package app;
+package de.htwg.seapal.boatdemo.app;
 
 import java.util.Scanner;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-import de.htwg.seapal.boatdemo.controllers.IBoatController;
 import de.htwg.seapal.boatdemo.views.tui.BoatTUI;
 
 
@@ -20,9 +19,7 @@ public class BoatDemo {
 		Injector injector = Guice.createInjector(new BoatDemoImplModule());
 		
 		// Build up the application, resolving dependencies automatically by Guice
-		IBoatController controller = injector.getInstance(IBoatController.class);
-
-		BoatTUI tui = new BoatTUI(controller);
+		BoatTUI tui = injector.getInstance(BoatTUI.class);
 
 		tui.printTUI();
 		// continue to read user input on the tui until the user decides to quit

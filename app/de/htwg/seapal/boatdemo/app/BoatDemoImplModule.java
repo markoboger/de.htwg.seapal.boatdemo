@@ -1,4 +1,4 @@
-package app;
+package de.htwg.seapal.boatdemo.app;
 
 import com.google.inject.AbstractModule;
 

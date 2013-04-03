@@ -20,9 +20,9 @@ object ApplicationBuild extends Build {
     organization := "de.htwg.seapal", // group id...
     crossPaths := false, // disable using the Scala version in output paths and artifacts
       
-    resolvers += "HTWG Repo" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local",
+    resolvers += "HTWG Resolvers" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local",
 
-    publishTo := Some("HTWG Repo" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local;build.timestamp=" + new java.util.Date().getTime),
+    publishTo := Some("HTWG PublishTo" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local;build.timestamp=" + new java.util.Date().getTime),
     
     // setup entry points for sonar code analyzer
   	pomExtra :=

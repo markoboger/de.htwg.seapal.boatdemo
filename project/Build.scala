@@ -11,7 +11,7 @@ object ApplicationBuild extends Build {
     // Add your project dependencies here,
 
     "com.google.inject" % "guice" % "3.0",
-    "util" % "util_2.10" % "1.0-SNAPSHOT",
+    "de.htwg" % "util" % "1.0-SNAPSHOT",
     "de.htwg.seapal" % "persondemo" % "1.1-SNAPSHOT"
   )
 
